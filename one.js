@@ -19,18 +19,11 @@ function checkIfInputEntriesIsEmpty() {
 }
 
 function RetrieveAndCalculate() {
-    //one way to retrieve 
-    //inputs = window.document.querySelectorAll("input");
     
-    //let number1 = inputs[0].value;
-    //let number2 = inputs[1].value;
-
     if (checkIfInputEntriesIsEmpty()) {
         window.alert("enter input number into the box");
     }
-    //if yes throws an error
-    //else complete computation
-    // another way to retrieve
+    
     else {
         let number1_str = getInputEntryNumber1()
         let number2_str = getInputEntryNumber2()
@@ -39,8 +32,5 @@ function RetrieveAndCalculate() {
         let result = number1_int + number2_int
         let resultElement = document.getElementById("result")
         resultElement.innerHTML = result
-
-
-
     }
 }
